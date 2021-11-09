@@ -11,8 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.0/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="./asset/js/function.js"></script>
 
 </head>
 
@@ -1449,21 +1452,21 @@
         <!-- support -->
         <div class="row mt-lg-5 mt-4">
             <div class="col-sm-6 col-md-3 support__col mb-md-0 mb-3">
-                <div class="support__item py-3 text-center border rounded" style="background: #f4f4f4;">
+                <div class="support__item h-100 py-3 text-center border rounded" style="background: #f4f4f4;">
                     <i style="font-size: 1.5rem; color: #0184c5" class="fa fa-truck" aria-hidden="true"></i>
                     <p class="font-weight-bold mb-0 mt-2">Free Shipping</p>
                     <p style="font-size: 13px;" class="mb-0">Free shippng on all UK orders</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 support__col mb-md-0 mb-3">
-                <div class="support__item py-3 text-center border rounded" style="background: #f4f4f4;">
+                <div class="support__item h-100 py-3 text-center border rounded" style="background: #f4f4f4;">
                     <i style="font-size: 1.5rem; color: #0184c5" class="fa fa-credit-card-alt" aria-hidden="true"></i>
                     <p class="font-weight-bold mb-0 mt-2">Payment On Delivery</p>
                     <p style="font-size: 13px;" class="mb-0">Cast on delivery option</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 support__col mb-3 mb-sm-0">
-                <div class="support__item py-3 text-center border rounded" style="background: #f4f4f4;">
+                <div class="support__item  h-100 py-3 text-center border rounded" style="background: #f4f4f4;">
                     <i style="font-size: 1.5rem; color: #0184c5" class="fa fa-calendar-o" aria-hidden="true"></i>
                     <p class="font-weight-bold mb-0 mt-2">Free Guarantee</p>
                     <p style="font-size: 13px;" class="mb-0">30 Days Money back</p>
@@ -1471,7 +1474,7 @@
             </div>
 
             <div class="col-sm-6 col-md-3 support__col">
-                <div class="support__item py-3 text-center border rounded" style="background: #f4f4f4;">
+                <div class="support__item  h-100 py-3 text-center border rounded" style="background: #f4f4f4;">
                     <i style="font-size: 1.5rem; color: #0184c5" class="fa fa-asterisk" aria-hidden="true"></i>
                     <p class="font-weight-bold mb-0 mt-2">24/7 Online Support</p>
                     <p style="font-size: 13px;" class="mb-0">We have support 24/7</p>
@@ -1481,30 +1484,1990 @@
 
         <!-- product -->
 
-        <div class="row mt-5">
+        <div class="row mt-5 product">
+            <ul class="nav nav-tabs border-bottom-0">
+                <li class="nav-item">
+                    <a class="nav-link pr-md-3 active" data-toggle="tab" href="#new__arrival">New Arrival</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#bestseller">Bestseller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#feature__product">Feature Products</a>
+                </li>
+            </ul>
             <div class="col-12 mb-3">
                 <div class="border-top"></div>
             </div>
-            <div class="col-lg-3 wrapper__product border-right">
-                <a class="product__item text-center d-inline-block">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
-                        <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
-                    </div>
+            <div class="col-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active position-relative px-0" id="new__arrival">
+                        <div class="splide" id="slide__newarribar">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-1.jpg" class="product__img" alt="">
+                                                </div>
 
-                    <img src="./asset/image/product/medium-size/1-1.jpg" class="w-100 h-100" alt="">
-                    <span class="category__name__product">
-                        Studio Design
-                    </span>
-                    <span class="product__name">
-                        Janon vista fhd 4k fffff
-                    </span>
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-2.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-3.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-4.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-5.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-6.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-7.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-8.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-9.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-10.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-11.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-12.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="bestseller">
+                        <div class="splide" id="slide__bestseller">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-1.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-2.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-3.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-4.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-5.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-6.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-7.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-8.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-9.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-10.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-11.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-12.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="feature__product">
+                        <div class="splide" id="slide__feature__product">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-1.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-2.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-3.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-4.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-5.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-6.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-7.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-8.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-9.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-10.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="mb-5 position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-11.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative wrapper__product text-center">
+                                            <a class="product__item d-inline-block border-right px-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">New</div>
+                                                    <div class="d-inline-block px-3 py-1 rounded msg__status">-10%</div>
+                                                </div>
+                                                <div class="overflow-hidden">
+                                                    <img src="./asset/image/product/medium-size/1-12.jpg" class="product__img" alt="">
+                                                </div>
+
+                                                <span class="category__name__product">
+                                                                Studio Design
+                                                            </span>
+                                                <span class="product__name py-2">
+                                                                Janon vista fhd 4k  
+                                                            </span>
+                                                <div class="flex-inline">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+
+                                                <span class="text__price pr-2">$29.00</span>
+                                                <span class="text__price__discount">$19.15</span>
+                                            </a>
+
+                                            <div class="d-flex algin-items-center justify-content-center mt-2">
+                                                <button data-toggle="modal" data-target="#product__modal__new__arrival__item1" class="btn border btn__preview"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                <button class="btn__favorite btn text-dark border  ">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </button>
+                                                <button class="btn btn__addtocart border mx-1">Add to cart</button>
+                                                <button class="btn__copy btn text-dark border">
+                                                                <i class="fa fa-file" aria-hidden="true"></i>
+                                                            </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal -->
+                <div class="modal fade" id="product__modal__new__arrival__item1">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="border">
+                                            <!-- slide main -->
+                                            <div id="main-slider-modal-item1" class="splide">
+                                                <div class="splide__track">
+                                                    <ul class="splide__list">
+                                                        <li class="splide__slide">
+                                                            <img src="./asset/image/product/large-size/1.jpg">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="./asset/image/product/large-size/2.jpg">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="./asset/image/product/large-size/3.jpg">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="./asset/image/product/large-size/4.jpg">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="./asset/image/product/large-size/5.jpg">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- slide thumb -->
+                                        <div id="thumbnail-slider-modal-item1" class="splide mt-3">
+
+                                            <div class="splide__track">
+                                                <ul class="splide__list">
+                                                    <li class="splide__slide">
+                                                        <img src="./asset/image/product/medium-size/1-1.jpg">
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <img src="./asset/image/product/medium-size/1-7.jpg">
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <img src="./asset/image/product/medium-size/1-5.jpg">
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <img src="./asset/image/product/medium-size/1-11.jpg">
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <img src="./asset/image/product/medium-size/1-6.jpg">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 text-left">
+                                        <p class="product__title__model">Janon vista fhd 4k</p>
+                                        <p>Reference: demo 1</p>
+                                        <div class="flex-inline star__modal">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <span class="text__price__discount pr-2">$19.15</span>
+                                            <span class="text__price__modal">$29.00</span>
+                                        </div>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel sodales dolor, sed hendrerit felis. Quisque at leo tincidunt odio scelerisque blandit. Donec pharetra tellus at urna fringilla pellentesque. Etiam
+                                            ante risus, pretium ut consequat pretium, tristique non orci. Suspendisse hendrerit placerat magna, vitae maximus diam congue at.</p>
+                                        <div class="d-flex align-items-center">
+                                            <span>Quantities:</span>
+                                            <div class="d-flex border text-center ml-4">
+                                                <div class="quantities__modal border-right">
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <i class="btn__quantiti_up border-bottom d-inline-block fa fa-angle-up" aria-hidden="true"></i>
+                                                    <i class="btn__quantiti_down d-inline-block fa fa-angle-down" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+
+                                            <button class="ml-3 btn btn__addtocart__modal btn-outline-primary">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3 border-top">
+                                    <div class="col mt-3">
+                                        <ul class="nav align-items-center">
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link pl-0 text-dark mr-3">Share</a>
+                                            </li>
+
+                                            <li class="nav-item mr-3">
+                                                <a href="" class="nav-link share__icon share__Facebook">
+                                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mr-3">
+                                                <a href="" class="nav-link share__icon share__twitter">
+                                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mr-3">
+                                                <a href="" class="nav-link share__icon share__youtobe">
+                                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mr-3">
+                                                <a href="" class="nav-link share__icon share__google">
+                                                    <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mr-3">
+                                                <a href="" class="nav-link share__icon share__instagram">
+                                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ml-auto">
+                                                <a href="" class="nav-link">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i> Add to favorite
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row banner__countdown mt-5">
+            <div class="col-md-5 col-sm-6 col-10 pr-0">
+                <div class="banner__countdown__left px-3 py-2">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                    <span>Jobaria's Daily Deal </span>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-6 col-2 pl-0 ">
+                <div class="banner__countdown__right pr-3 pl-5 h-100 py-2 d-flex align-items-center">
+                    <span>Mega sale on tvs, Headphone, watcher, accessories</span>
+                </div>
+            </div>
+        </div>
+        <!-- slide discount -->
+        <div class="row mt-5 mt-md-3">
+            <div class="col">
+                <div class="slide__discount splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="row slide__content__countdown border-right border-lg-right-0 mx-0">
+                                    <div class="col-lg-5 ">
+                                        <div class="new__product__msg px-3 py-1 btn ">New</div>
+                                        <a class="d-inline-block" href="">
+                                            <img src="./asset/image/product/medium-size/1-1.jpg" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-7 border-lg-right">
+                                        <p class="slide__discount__title">hurry up! offer end in:</p>
+                                        <div class="d-flex wrapper__countdown justify-content-start text-center">
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__day__1" class="countdown__number d-block">27</span>
+                                                <span class="time__info">Days</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__hour__1" class="countdown__number d-block">15</span>
+                                                <span class="time__info">Hrs</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__minute__1" class="countdown__number d-block">38</span>
+                                                <span class="time__info">Mins</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__seconds__1" class="countdown__number d-block">58</span>
+                                                <span class="time__info">Secs</span>
+                                                <script>
+                                                    countDownDiscount('11-11-2021 09:12:58', 1)
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <p class="slide__category__name mt-3">
+                                            Studio Design
+                                        </p>
+
+                                        <span class="product__name py-2">
+                                            Janon vista fhd 4k  
+                                        </span>
+
+                                        <div class="flex-inline">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <p class="mt-3 slide__discount__description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                        <span class="text__price pr-2">$29.00</span>
+                                        <span class="text__price__discount">$19.15</span> <br>
+                                        <button class="btn btn__addtocart border px-4 py-2 mx-1 mt-3">Add to cart</button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="splide__slide slide__item__countdown">
+                                <div class="row mx-0 slide__content__countdown">
+                                    <div class="col-lg-5 ">
+                                        <div class="new__product__msg px-3 py-1 btn ">New</div>
+                                        <a class="d-inline-block" href="">
+                                            <img src="./asset/image/product/medium-size/1-1.jpg" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-7 border-right  ">
+                                        <p class="slide__discount__title">hurry up! offer end in:</p>
+                                        <div class="d-flex wrapper__countdown justify-content-start text-center">
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__day__2" class="countdown-day countdown__number d-block">27</span>
+                                                <span class="time__info">Days</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__hour__2" class="countdown__number d-block">15</span>
+                                                <span class="time__info">Hrs</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__minute__2" class="countdown__number d-block">38</span>
+                                                <span class="time__info">Mins</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span id="countdown__seconds__2" class="countdown__number d-block">58</span>
+                                                <span class="time__info">Secs</span>
+                                            </div>
+                                            <script>
+                                                countDownDiscount('11-14-2021 14:26:34', 2)
+                                            </script>
+                                        </div>
+                                        <p class="slide__category__name mt-3">
+                                            Studio Design
+                                        </p>
+
+                                        <span class="product__name py-2">
+                                            Janon vista fhd 4k  
+                                        </span>
+
+                                        <div class="flex-inline">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <p class="mt-3 slide__discount__description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                        <span class="text__price pr-2">$29.00</span>
+                                        <span class="text__price__discount">$19.15</span> <br>
+                                        <button class="btn btn__addtocart border px-4 py-2 mx-1 mt-3">Add to cart</button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row slide__content__countdown mx-0">
+                                    <div class="col-5 ">
+                                        <div class="new__product__msg px-3 py-1 btn ">New</div>
+                                        <a class="d-inline-block" href="">
+                                            <img src="./asset/image/product/medium-size/1-1.jpg" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="col-7 border-right">
+                                        <p class="slide__discount__title">hurry up! offer end in:</p>
+                                        <div class="d-flex justify-content-start text-center">
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class=" countdown__number d-block">27</span>
+                                                <span class="time__info">Days</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">15</span>
+                                                <span class="time__info">Hrs</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">38</span>
+                                                <span class="time__info">Mins</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">58</span>
+                                                <span class="time__info">Secs</span>
+                                            </div>
+                                        </div>
+                                        <p class="slide__category__name mt-3">
+                                            Studio Design
+                                        </p>
+
+                                        <span class="product__name py-2">
+                                            Janon vista fhd 4k  
+                                        </span>
+
+                                        <div class="flex-inline">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <p class="mt-3 slide__discount__description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                        <span class="text__price pr-2">$29.00</span>
+                                        <span class="text__price__discount">$19.15</span> <br>
+                                        <button class="btn btn__addtocart border px-4 py-2 mx-1 mt-3">Add to cart</button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row slide__content__countdown mx-0">
+                                    <div class="col-5 ">
+                                        <div class="new__product__msg px-3 py-1 btn ">New</div>
+                                        <a class="d-inline-block" href="">
+                                            <img src="./asset/image/product/medium-size/1-1.jpg" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="col-7 border-right">
+                                        <p class="slide__discount__title">hurry up! offer end in:</p>
+                                        <div class="d-flex justify-content-start text-center">
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">27</span>
+                                                <span class="time__info">Days</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">15</span>
+                                                <span class="time__info">Hrs</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">38</span>
+                                                <span class="time__info">Mins</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">58</span>
+                                                <span class="time__info">Secs</span>
+                                            </div>
+                                        </div>
+                                        <p class="slide__category__name mt-3">
+                                            Studio Design
+                                        </p>
+
+                                        <span class="product__name py-2">
+                                            Janon vista fhd 4k  
+                                        </span>
+
+                                        <div class="flex-inline">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <p class="mt-3 slide__discount__description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                        <span class="text__price pr-2">$29.00</span>
+                                        <span class="text__price__discount">$19.15</span> <br>
+                                        <button class="btn btn__addtocart border px-4 py-2 mx-1 mt-3">Add to cart</button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row slide__content__countdown mx-0">
+                                    <div class="col-5 ">
+                                        <div class="new__product__msg px-3 py-1 btn ">New</div>
+                                        <a class="d-inline-block" href="">
+                                            <img src="./asset/image/product/medium-size/1-1.jpg" class="w-100">
+                                        </a>
+                                    </div>
+                                    <div class="col-7 border-right">
+                                        <p class="slide__discount__title">hurry up! offer end in:</p>
+                                        <div class="d-flex justify-content-start text-center">
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">27</span>
+                                                <span class="time__info">Days</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">15</span>
+                                                <span class="time__info">Hrs</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">38</span>
+                                                <span class="time__info">Mins</span>
+                                            </div>
+                                            <div class="box__countdown rounded p-2 mr-2">
+                                                <span class="countdown__number d-block">58</span>
+                                                <span class="time__info">Secs</span>
+                                            </div>
+                                        </div>
+                                        <p class="slide__category__name mt-3">
+                                            Studio Design
+                                        </p>
+
+                                        <span class="product__name py-2">
+                                            Janon vista fhd 4k  
+                                        </span>
+
+                                        <div class="flex-inline">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <p class="mt-3 slide__discount__description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                        <span class="text__price pr-2">$29.00</span>
+                                        <span class="text__price__discount">$19.15</span> <br>
+                                        <button class="btn btn__addtocart border px-4 py-2 mx-1 mt-3">Add to cart</button>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- banner 2 -->
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row banner2">
+            <div class="col-lg-6 px-0 banner__item">
+                <div class="bg__hover__top"></div>
+                <a href="" class="">
+                    <img class="w-100 h-100" src="./asset/image/banner/1-5.jpg" alt="">
                 </a>
+                <div class="bg__hover__bottom"></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-sm-6 px-0 banner__item">
+                        <div class="bg__hover__top"></div>
+                        <a href="">
+                            <img class="w-100 h-100" src="./asset/image/banner/1-6.jpg" alt="">
+                        </a>
+                        <div class="bg__hover__bottom"></div>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <div class="row flex-column">
+                            <div class="col px-0 banner__item">
+                                <div class="bg__hover__top"></div>
+                                <a href="">
+                                    <img class="w-100 h-100" src="./asset/image/banner/1-7.jpg" alt="">
+                                </a>
+                                <div class="bg__hover__bottom"></div>
+                            </div>
+                            <div class="col px-0 banner__item">
+                                <div class="bg__hover__top"></div>
+                                <a href="">
+                                    <img class="w-100 h-100" src="./asset/image/banner/1-8.jpg" alt="">
+                                </a>
+                                <div class="bg__hover__bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 px-0 banner__item">
+                <div class="bg__hover__top"></div>
+                <a href="">
+                    <img src="./asset/image/banner/1-9.jpg" class="w-100 h-100" alt="">
+                </a>
+                <div class="bg__hover__bottom"></div>
             </div>
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.0/dist/js/splide.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./asset/js/swiper.js"></script>
     <script src="./asset/js/main.js "></script>
+
+
+
+
 </body>
 
 </html>
