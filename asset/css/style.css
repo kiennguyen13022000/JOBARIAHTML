@@ -156,7 +156,7 @@ a:hover {
 }
 
 #shop__categories__tablet {
-    z-index: 100;
+    z-index: 400 !important;
 }
 
 .shop__categories__item:hover>.shop__categories__item__a {
@@ -662,6 +662,10 @@ a:hover {
     100% {
         opacity: 0;
     }
+}
+
+.banner__item {
+    z-index: 300;
 }
 
 .banner__item:hover .bg__hover__bottom {
