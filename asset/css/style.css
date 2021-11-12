@@ -388,6 +388,12 @@ a:hover {
     animation: countdownSlide 5s ease-in-out infinite;
 }
 
+
+/* #myCarousel .carousel-item img {
+    object-fit: cover;
+    height: calc(100vh - 164px) !important;
+} */
+
 .carousel-caption {
     text-align: left;
     top: 15%;
@@ -684,12 +690,25 @@ a:hover {
     background: #fffcfc !important;
 }
 
+.icon__support {
+    font-size: 2rem;
+}
+
+.title__support {
+    font-size: 1.3rem;
+}
+
+.discription__support {
+    font-size: 1.1rem;
+}
+
 
 /* product */
 
 .msg__status {
     background: #0184c5;
     font-size: 13px;
+    z-index: 70;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
@@ -721,7 +740,9 @@ a:hover {
 
 .product__img {
     width: 100%;
+    z-index: 50;
     height: 100%;
+    margin-top: 10px;
     transition: all 0.3s ease;
 }
 
@@ -761,6 +782,10 @@ a:hover {
 .wrapper__product:hover .btn__preview {
     opacity: 1;
     visibility: visible;
+}
+
+.product__item .fa-star {
+    color: black;
 }
 
 .wrapper__product:hover .product__img {
@@ -1260,6 +1285,10 @@ a:hover {
     margin-top: 20px;
 }
 
+.share__social li {
+    margin-right: 7px !important;
+}
+
 .share__social .share__icon i {
     line-height: 30px;
 }
@@ -1589,6 +1618,10 @@ a:hover {
         margin-bottom: 15px;
         flex-direction: column;
     }
+    #myCarousel .carousel-item img {
+        object-fit: cover;
+        height: calc(100vh - 50vh) !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1607,7 +1640,6 @@ a:hover {
         font-size: 14px;
     }
     .carousel-caption {
-        top: 0;
         padding-top: 10px;
     }
     .btn__shop_right,

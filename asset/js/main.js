@@ -18,7 +18,6 @@ $(document).ready(function() {
     $('#btn__all__categories').click(
         function() {
             let d = $('#list__all__categories').css('height');
-            console.log(d);
             if (d == '0px')
                 $('#list__all__categories').css({ height: '285px', border: '1px solid #eeeeee' });
             else
@@ -82,14 +81,6 @@ $(document).ready(function() {
     })
 
     $('#accordion__categories .nav-link').click(function() {
-        // if($('#accordion').length)
-        // let thisClick = $('#accordion__categories > .fa').index($(this).find('.fa'));
-
-        // $('#accordion__categories .fa').each(function() {
-        //     // console.log($('#accordion .fa').index(this));
-        //     if (thisClick != $('#accordion__categories .fa').index(this))
-        //         if ($(this).hasClass('fa-minus')) $(this).removeClass('fa-minus').addClass('fa-plus');
-        // })
         if ($(this).find('.fa').hasClass('fa-plus')) {
             $(this).find('.fa').removeClass('fa-plus').addClass('fa-minus');
         } else {
@@ -131,4 +122,22 @@ $(document).ready(function() {
         quantiti.text(val);
     })
 
+
+    // list page
+
+    $('#accordion__categories__current .nav-link').click(function() {
+        // if($('#accordion').length)
+        let thisClick = $('#accordion__categories__current .fa').index($(this).find('.fa'));
+
+        $('#accordion__categories__current .fa').each(function() {
+            // console.log($('#accordion .fa').index(this));
+            if (thisClick != $('#accordion__categories__current .fa').index(this))
+                if ($(this).hasClass('fa-minus')) $(this).removeClass('fa-minus').addClass('fa-plus');
+        })
+        if ($(this).find('.fa').hasClass('fa-plus')) {
+            $(this).find('.fa').removeClass('fa-plus').addClass('fa-minus');
+        } else {
+            $(this).find('.fa').removeClass('fa-minus').addClass('fa-plus');
+        }
+    })
 });
