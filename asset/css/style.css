@@ -1347,6 +1347,18 @@ a:hover {
     color: white;
 }
 
+.content__modal {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product__modal__new__arrival__item1 {
+    height: 100vh !important;
+}
+
 @media screen and (max-width: 1400px) {
     .subscribe {
         left: 30%;
@@ -1444,9 +1456,45 @@ a:hover {
         text-align: center !important;
         /* border-right: none !important; */
     }
+    .modal-dialog {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 767.72329px) {
+    .product__title__model {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .star__modal i {
+        font-size: 13px;
+    }
+    .category__modal {
+        font-size: 14px;
+    }
+    .share li {
+        margin-right: 7px !important;
+    }
+    .content__modal {
+        -webkit-line-clamp: 3;
+        font-size: 13px;
+    }
+    .text__price__discount {
+        font-size: 16px;
+    }
+    .text__price__modal {
+        font-size: 13px;
+    }
+    .wrapper__to__cart {
+        font-size: 14px;
+    }
+    .quantities__modal {
+        width: 35px !important;
+    }
+    .btn__addtocart__modal {
+        font-size: 14px;
+    }
     .subscribe {
         left: 10%;
         right: 10%;
@@ -1526,9 +1574,17 @@ a:hover {
     .banner__custom3 .banner__description {
         right: 40%;
     }
+    #main-slider-modal-item1 img {
+        width: 70% !important;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
-@media screen and (max-width: 575.99px) {
+@media screen and (max-width: 575.83439px) {
+    #main-slider-modal-item1 img {
+        width: 50% !important;
+    }
     .subscribe__title_1 {
         font-size: 20px;
     }
@@ -1591,7 +1647,7 @@ a:hover {
     .carousel-control-next {
         display: none;
     }
-    .slide__content__title1,
+    /* .slide__content__title1,
     .slide__right__left1 {
         font-size: 10px;
     }
@@ -1610,7 +1666,7 @@ a:hover {
     .slide__right__left4 {
         font-size: 11px;
         margin-bottom: 3px;
-    }
+    } */
     .banner__countdown__right span {
         visibility: hidden;
     }

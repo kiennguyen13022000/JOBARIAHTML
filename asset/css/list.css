@@ -64,7 +64,7 @@
 }
 
 .text__price__discount {
-    font-size: 18px !important;
+    font-size: 22px !important;
 }
 
 .show__list__product {
@@ -275,15 +275,27 @@
         font-size: 12px;
         padding: 5px 10px;
     }
+    .btn_filter {
+        padding: 4px 8px;
+    }
+    .wrapper__sort {
+        font-size: 12px;
+    }
+    .filter-option-inner-inner {
+        font-size: 12px !important;
+    }
+    .dropdown-menu .dropdown-item {
+        font-size: 12px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .filter__product .nav {
+    /* .filter__product .nav {
         flex-direction: column;
     }
     .filter__product .nav li {
         margin-bottom: 15px;
-    }
+    } */
     .filter__product .nav .bootstrap-select.sort {
         width: 200px !important;
     }
@@ -296,6 +308,18 @@
     #grid__product .row>div {
         width: 100% !important;
         max-width: 100% !important;
+    }
+    .filter__product .nav .bootstrap-select.sort {
+        width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .filter__product .nav {
+        flex-direction: column;
+    }
+    .filter__product .nav li {
+        margin-bottom: 15px;
     }
 }
 

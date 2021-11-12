@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
             992: {
                 fixedWidth: 100
+            },
+
+            576: {
+                fixedWidth: 60
             }
         }
 
