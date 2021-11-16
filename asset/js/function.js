@@ -1,6 +1,8 @@
 function countDownDiscount(time_discount, id) {
+
     let timeDc = moment(time_discount).valueOf();
     let currentTime = moment().valueOf();
+    console.log(time_discount + '-' + timeDc);
     if (timeDc > currentTime) {
         let day = null,
             time = null,

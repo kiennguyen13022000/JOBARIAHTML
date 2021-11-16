@@ -1,0 +1,112 @@
+.return__customer {
+    border-top: 3px solid #0184c5;
+}
+
+.colorCheckout {
+    color: #eeeeee;
+}
+
+.click__return__customer:hover {
+    color: #0184c5;
+}
+
+.return__customer .fa-calendar-o {
+    font-size: 1.4rem;
+    color: #0184c5;
+}
+
+.top__checkout .action__customer {
+    background: #f4f4f4;
+    color: #272525;
+    font-weight: 500;
+}
+
+.btn__submit__login:focus {
+    outline: none;
+}
+
+.btn__submit__login:hover {
+    background: #0184c5;
+}
+
+.btn__submit__login {
+    background: #333333;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+}
+
+.input__code {
+    width: 200px !important;
+}
+
+.billding__details .star__feature {
+    color: #0184c5;
+}
+
+.star__normal {
+    font-size: 13px;
+    color: #868181;
+}
+
+.ship__to__different__address {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.collapse__ship__different {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+
+.btn__playorder {
+    display: block;
+}
+
+.product__name__in-order {
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.your__order .fa-times {
+    font-size: 13px;
+}
+
+.title__order__total {
+    font-size: 20px;
+}
+
+.table__your__order td {
+    border-top: 2px solid #929191;
+}
+
+.table__your__order tr:last-child td {
+    border-top: 2px solid #000000;
+}
+
+.pay {
+    font-weight: 600;
+    color: #3d3d3d;
+}
+
+.btn__playorder {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background: #333333;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.btn__playorder:focus {
+    outline: none;
+}
+
+.btn__playorder:hover {
+    background: #0184c5;
+}
