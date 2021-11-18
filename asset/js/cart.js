@@ -37,6 +37,11 @@ if (localStorage.getItem('cart') == null) {
     $('#table__cart').hide();
 }
 
+if (quantityCurrent == 0) {
+    $('#cart__empty').show(300);
+}
+
+
 function removeCartItem() {
     $('.total__cart').text(0);
     localStorage.removeItem('cart');
