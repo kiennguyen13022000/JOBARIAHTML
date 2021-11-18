@@ -171,3 +171,34 @@ $('#close__modal__review').click(function() {
 
     $("#write__review__modal .close").click();
 })
+
+
+$('.choose__color').click(function() {
+    let listChooseColor = $('.choose__color')
+
+    listChooseColor.each(function() {
+        $(this).removeClass('active__chooseColor')
+    });
+
+    $(this).addClass('active__chooseColor');
+
+});
+
+let quantityCurrent = localStorage.getItem('cart')
+quantityCurrent = quantityCurrent != null ? quantityCurrent : 0;
+$('.total__cart').text(quantityCurrent);
+
+function addToCart() {
+    let quantityProduct = $('#product__quantity__to__cart').text();
+    quantityProduct = parseInt(quantityProduct)
+    let quantityOld = localStorage.getItem('cart');
+    let newQuantity;
+
+    newQuantity = quantityProduct;
+    if (quantityOld != null) {
+        newQuantity = quantityProduct + parseInt(quantityOld);
+    }
+
+    localStorage.setItem('cart', newQuantity);
+    $('.total__cart').text(newQuantity);
+}

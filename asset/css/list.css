@@ -255,6 +255,10 @@
 }
 
 @media screen and (max-width: 767.6322px) {
+    .list__page .close {
+        top: 30px;
+        right: 40px;
+    }
     .topList {
         flex-direction: column !important;
         justify-content: start;

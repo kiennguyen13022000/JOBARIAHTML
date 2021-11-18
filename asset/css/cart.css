@@ -54,7 +54,7 @@
     border: none;
     transition: all 0.3s ease;
     padding: 7px 10px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .btn__tocheckout:hover,
@@ -88,6 +88,47 @@
     .btn__tocheckout,
     .btn__coupon,
     .btn__update__cart {
+        font-size: 15px;
+    }
+}
+
+#table__cart {
+    font-size: 15px;
+}
+
+#cart__empty {
+    display: none;
+    margin: 60px 0px;
+    padding-bottom: 50px;
+}
+
+#cart__empty img {
+    max-width: 100px;
+}
+
+.title__cart__empty {
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767.9232px) {
+    #cart__empty {
+        margin: 0;
+    }
+    #cart__empty img {
+        max-width: 50px;
+    }
+    #cart__empty img {
+        max-width: 50px;
+    }
+    .title__cart__empty {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575.9232px) {
+    .title__cart__empty {
         font-size: 15px;
     }
 }

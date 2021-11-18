@@ -20,6 +20,8 @@
         
         .active__chooseColor {
             border: 1px solid rgb(30, 236, 175);
+            /*  box-shadow: 1px 1px 10px 1px rgb(181, 235, 218);  */
+            transform: scale(1.2);
         }
         
         .policy .fa {
